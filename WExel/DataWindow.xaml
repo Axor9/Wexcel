@@ -1,0 +1,47 @@
+﻿<Window x:Class="WExel.DataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WExel"
+        mc:Ignorable="d"
+        Title="DataWindow" Height="350" Width="450" ResizeMode="CanMinimize" MouseRightButtonDown="Window_MouseRightButtonDown" MouseLeftButtonDown="Window_MouseLeftButtonDown" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Source="image\help.png" Width="20" Height="20" Grid.Column="3" Margin="100,0,0,70" MouseDown="Image_MouseDown" ToolTip="Ayuda"/>
+        <TextBox Name="Box1" Margin="5,45,5,35" ToolTip="Valor de X"/>
+        <TextBox Name="Box2"  Grid.Column="1" Margin="5,45,5,35" ToolTip="Valor de Y"/>
+        <Button Content="Añadir"  Grid.Column="2" Margin="5,45,5,35"
+                Click="Button_Click" />
+        <ListView Name="lista" Margin="20" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="3" KeyDown="Eliminar" MouseDoubleClick="Editar" >
+            <ListView.View >
+                <GridView>
+                    <GridViewColumn Header="X"  Width="192" DisplayMemberBinding="{Binding x}"/>
+                    <GridViewColumn Header="Y" Width="192" DisplayMemberBinding="{Binding y}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <Menu Name="ClickDerecho" Grid.RowSpan="3" Width="166" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Collapsed">
+            <MenuItem Header="Añadir" Name="Añadir" Width="166" AllowDrop="True">
+                <MenuItem Header="Inserta al final" Name="InsetarFinal" Click="Button_Click" Width="166"/>
+                <MenuItem Header="Inserta antes"  Name="InsertarAntes" Click="InsertarAntes_Click"  Width="166"/>
+                <MenuItem Header="Inserta después"  Name="InsertarDespues" Click="InsertarDespues_Click"  Width="166"/>
+            </MenuItem>
+            <MenuItem Header="Eliminar"  Name="Eliminar1" Click="Eliminar1_Click" Width="166"/>
+            <MenuItem Header="Editar"  Name="Editar1" Click="Editar1_Click" Width="166"/>
+            <MenuItem Header="Ordenar"  Name="Ordenar" Click="Ordenar_Click" Width="166"/>
+            <Separator Width="166"/>
+            <MenuItem Header="Cerrar"  Name="Cerrar1" Click="Cerrar1_Click" Width="166"/>
+        </Menu>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="WExel.NombreGrafica"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WExel"
+        mc:Ignorable="d"
+        Title="NombreGrafica" Height="200" Width="400" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Name="Nombre" Margin="30" ToolTip="Nombre de la Grafica"/>
+        <Button Content="OK" Grid.Row="2" Margin="60,20,60,20" Click="Button_Click" />
+    </Grid>
+</Window>

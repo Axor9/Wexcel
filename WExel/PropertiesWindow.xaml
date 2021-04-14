@@ -1,0 +1,118 @@
+﻿<Window x:Class="WExel.PropertiesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WExel"
+        mc:Ignorable="d"
+        Title="PropertiesWindow" Height="450" Width="500" Closing="Window_Closing" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <TabControl Grid.Row="0" Grid.ColumnSpan="3" Margin="10">
+            <TabItem Header="Grafica">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Grid.Column="0">
+                        <TextBlock Text="Nombre: " Margin="10" HorizontalAlignment="Center" FontSize="14"/>
+                        <TextBlock Text="Tamaño: " Margin="10" HorizontalAlignment="Center" FontSize="14"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="0" Grid.Column="1">
+                        <TextBox Name="Nombre"  Margin="10" TextChanged="Nombre_TextChanged"/>
+                        <ComboBox Name="Tamaño" Margin="10" IsEditable="True" SelectedIndex="1" ToolTip="Tamaño de Linea" VerticalAlignment="Center" LostFocus="Tamaño_GotFocus"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+                        <ToggleButton Name="Linea" Margin="10" Height="70" Width="70" Click="Linea_Click">
+                            <Image Source="image\botonLinea.png" Stretch="Fill" />
+                        </ToggleButton>
+                        <ToggleButton Name="Columnas" Margin="10" Height="70" Width="70" Click="Columnas_Click">
+                            <Image Source="image\botonbarras.png" Stretch="Fill" />
+                        </ToggleButton>
+                        <ToggleButton Name="Puntos"  Margin="10" Height="70" Width="70" Click="Puntos_Click">
+                            <Image Source="image\botonDispersion.png" Stretch="Fill"/>
+                        </ToggleButton>
+                        <ToggleButton Name="Barras" Margin="10" Height="70" Width="70" Click="Barras_Click">
+                            <Image Source="image\horizontalbarchart.png" Stretch="Fill" />
+                        </ToggleButton>
+                        <ToggleButton Name="Areas" Margin="10" Height="70" Width="70" Click="Areas_Click">
+                            <Image Source="image\areachart.png" Stretch="Fill"/>
+                        </ToggleButton>
+                    </StackPanel>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Color">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Color del Relleno: " VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="12" FontSize="13"/>
+                        <TextBlock Text="Color de la Línea: " VerticalAlignment="Center" HorizontalAlignment="Center" Margin="12" FontSize="13"/>
+                        <TextBlock Text="Color Selección: " VerticalAlignment="Center" HorizontalAlignment="Center" Margin="12" FontSize="13"/>
+                        <TextBlock Text="Opacidad: " VerticalAlignment="Center" HorizontalAlignment="Center" Margin="40" FontSize="13"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <ComboBox Name="ColorRelleno" SelectionChanged="Color_SelectionChanged" VerticalAlignment="Center" Margin="10">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
+                                        <TextBlock Text="{Binding Name}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+
+                        <ComboBox Name="ColorLinea" SelectionChanged="Color_SelectionChanged1"  VerticalAlignment="Center" Margin="10">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
+                                        <TextBlock Text="{Binding Name}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+
+                        <ComboBox Name="ColorSeleccion" SelectionChanged="ColorSeleccion_SelectionChanged" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Margin="10">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
+                                        <TextBlock Text="{Binding Name}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                        <Separator Margin="10"/>
+                        <ComboBox Name="Opacidad" Margin="5" IsEditable="True" SelectedIndex="1" ToolTip="Opacidad de la gráfica" VerticalAlignment="Center" LostFocus="Opacidad_LostFocus" Width="150"/>
+
+
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Name="Aceptar" Grid.Row="1" Grid.Column="1" Margin="20,0,20,20" Content="Aceptar" Click="Aceptar_Click"/>
+        <Button Name="Cancelar" Grid.Row="1" Grid.Column="2" Margin="20,0,20,20" Content="Cancelar" Click="Cancelar_Click"/>
+        <Button Name="Restablecer" Grid.Row="1" Margin="20,0,20,20" Content="Restablecer" Click="Restablecer_Click"/>
+
+    </Grid>
+</Window>

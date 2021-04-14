@@ -1,0 +1,50 @@
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WExel.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\App.g.cs
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WExel_MarkupCompile.cache
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WExel_MarkupCompile.lref
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\bin\Debug\WExel.exe.config
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\bin\Debug\WExel.exe
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\bin\Debug\WExel.pdb
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WExel.g.resources
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WExel.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WExel.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WExel.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WExel.exe
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WExel.pdb
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\DataWindow.g.cs
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\DataWindow.baml
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WindowEditar.g.cs
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\WindowEditar.baml
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\DataAutoWindow.g.cs
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\DataAutoWindow.baml
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WExel.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\DataAutoWindow.g.cs
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\DataWindow.g.cs
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\NombreGrafica.g.cs
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WindowEditar.g.cs
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\App.g.cs
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WExel_MarkupCompile.cache
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WExel_MarkupCompile.lref
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WExel.exe
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WExel.pdb
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\bin\Debug\WExel.exe.config
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\bin\Debug\WExel.exe
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\bin\Debug\WExel.pdb
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\DataAutoWindow.baml
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\DataWindow.baml
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WindowEditar.baml
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\NombreGrafica.baml
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WExel.g.resources
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WExel.Properties.Resources.resources
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WExel.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\WExel.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\PropertiesWindow.g.cs
+C:\Users\Usuario\Desktop\WExelConHojas\WExel\obj\Debug\PropertiesWindow.baml
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\NombreGrafica.g.cs
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\PropertiesWindow.g.cs
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\NombreGrafica.baml
+C:\Users\Usuario\Desktop\Trabajo Interfaces Graficas\WExel\WExel\obj\Debug\PropertiesWindow.baml
